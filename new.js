@@ -23,7 +23,7 @@ for(let i=1;i<101;i++){
 let attempts=20
 win=false
 let jackpot=Number(Math.round(Math.random()*100))
-console.log(jackpot)
+
 let difficulty=prompt("ENter the difficulty  easy 20  ,medium 10  ,hard  5")
 if (difficulty=="easy"){
     attempts=20

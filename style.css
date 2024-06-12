@@ -1,119 +1,44 @@
-*{
-    box-sizing: border-box;
+body{
     margin: 0;
     padding: 0;
 }
-.container{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    margin-inline:auto;
-    background-color: #f3eded;
-    /* padding: 20px; */
-    gap: 20px;
-    
-}
-.left_column{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-   
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 10px;
-    /* padding: 2px; */
-    background-color: white;
+
+.button{
+    margin: 32px;
+    background-color: green;
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
 
     
-
 }
-
-    
-
-.contact-info,.image{
-    background-color: white;
-}
-.skillbox{
-    margin: 10px 0px ;
-    background-color: white;
-}
-.language-container-main{
-    margin: 10px 0px;
-    background-color: white;
-}
-
-.left_column .image img{
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-.left_column .image{
-    position: relative;
-}
-.left_column .image .user{
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    color: aliceblue;
-}
-ul{
-    list-style: none;
-}
-.icon{
-    display: flex;
-    gap: 8px;
-   
-    
-}
-.icon i{
-    color: teal;
-}
-ul li{
-    margin: 15px;
-    
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 500;
 }
 
-
-.progressbar{
-     border: 1px solid aliceblue;
-     border-radius: 10px; 
-     background-color: rgb(217, 232, 246);  
+.button:hover{
+    background-color: rgb(121, 197, 125);
 }
-.progressbar .progress{
-    background-color: teal;
-    border-radius: 10px; 
+
+#win{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(red, green rgb(80, 80, 103));
+    border: 2px solid black;
+    padding: 20px;
     text-align: center;
-}
-
-.right_column{
-    width: 70%;
-   display: flex;
-   flex-direction: column;
-    gap: 20px;
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 10px;
-   
-}
-.Work-experience{
-    
-height: 50%;
-border: 1px solid rgb(218, 218, 218);
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.Education{
-height: 50%;
-border: 1px solid rgb(218, 218, 218);
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.card{
-    /* margin: 10px; */
-    box-shadow:4px 4px 4px aliceblue;
-}
-.data{
-    margin-inline: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }

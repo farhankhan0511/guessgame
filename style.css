@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-inline:auto;
+    background-color: #f3eded;
+    /* padding: 20px; */
+    gap: 20px;
+    
+}
+.left_column{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+   
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    /* padding: 2px; */
+    background-color: white;
+
+    
+
+}
+
+    
+
+.contact-info,.image{
+    background-color: white;
+}
+.skillbox{
+    margin: 10px 0px ;
+    background-color: white;
+}
+.language-container-main{
+    margin: 10px 0px;
+    background-color: white;
+}
+
+.left_column .image img{
+    width: 100%;
+}
+.left_column .image{
+    position: relative;
+}
+.left_column .image .user{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: aliceblue;
+}
+ul{
+    list-style: none;
+}
+.icon{
+    display: flex;
+    gap: 8px;
+   
+    
+}
+.icon i{
+    color: teal;
+}
+ul li{
+    margin: 15px;
+    
+}
+
+
+.progressbar{
+     border: 1px solid aliceblue;
+     border-radius: 10px; 
+     background-color: rgb(217, 232, 246);  
+}
+.progressbar .progress{
+    background-color: teal;
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.right_column{
+    width: 70%;
+   display: flex;
+   flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+   
+}
+.Work-experience{
+    
+height: 50%;
+border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Education{
+height: 50%;
+border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card{
+    /* margin: 10px; */
+    box-shadow:4px 4px 4px aliceblue;
+}
+.data{
+    margin-inline: 20px;
+}
